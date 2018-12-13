@@ -28,4 +28,11 @@ public Categoria insert(Categoria obj) {
 		return repo.save(obj);
 		
 	}
+
+
+public Categoria update(Categoria obj) {
+	
+	find(obj.getId());
+	return repo.save(obj);
+}
 }
